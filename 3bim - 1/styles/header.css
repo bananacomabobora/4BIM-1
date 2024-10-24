@@ -13,9 +13,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:relative;
 }
 
 .container {
     display: flex;
     align-items: center;
+}
+
+.lista-menu {
+    display: none;
+    position:absolute;
+    top:100%;
+  }
+
+.container:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu {
+    padding: 1em;
+    background-color: var(--branco);
 }
